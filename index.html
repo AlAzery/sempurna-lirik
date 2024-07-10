@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lirik Lagu Sempurna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="lyrics-container">
+            <div class="lyrics" id="lyrics"></div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2lo7i5EQkU1oqz4aY_B0URljEE-k0czWCPhCuTFEs5Y0HEDSm2XJevvR&s=10" alt="unknown" class="owing">
+            <h2 class="name-music">SEMPURNA</h2>
+            <p class="orang">Andra & The Backbone</p>
+            <div class="audio-controls">
+                <div class="duration-container">
+                    <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+                </div>
+                <input type="range" id="progressSlider" min="0" max="100" value="0" step="1">
+                <div class="control-buttons">
+                    <button id="rewindBtn" class="control"><i class="fas fa-backward"></i></button>
+                    <button id="playPauseBtn" class="control"><i class="fas fa-play"></i></button>
+                    <button id="forwardBtn" class="control"><i class="fas fa-forward"></i></button>
+                </div>
+                <div class="volume-container">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+        <audio id="myAudio">
+            <source src="sempurna.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
